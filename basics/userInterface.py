@@ -83,7 +83,7 @@ class sudokuUi(Frame):
                     y=MARGIN+i*SIDE+SIDE/2
                     original=self.__game.puzzle[i][ii]
                     color="black" if answer==original else "green"
-                    self.canvas.create_text(x,y,text=answer,tags="numbers",fill=color)
+                    self.canvas.create_text(x,y,text=answer,tags="numbers",fill=color,font=15)
             
    
     def new_game(self):
@@ -107,7 +107,7 @@ class sudokuUi(Frame):
             y=MARGIN+self.row*SIDE+SIDE/2
             if self.__game.start_puzzle[self.row][self.col]!=0:
                 color="black" if answer==correct else "red"
-                self.canvas.create_text(x,y,text=answer,tags="numbers",fill=color)
+                self.canvas.create_text(x,y,text=answer,tags="numbers",fill=color,font=15)
     
     def change_level(self):
         '''
