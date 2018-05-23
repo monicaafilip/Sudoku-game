@@ -185,7 +185,7 @@ class sudokuUi(Frame):
         self.canvas.create_oval(x0,y0,x1,y1,fill="dark green",outline="black")
         
         x=y=MARGIN+4*SIDE+SIDE/2
-        self.canvas.create_text(x,y,text="You win!",fill="white",font=("Verdana",30))
+        self.canvas.create_text(x,y,text="You won!",fill="white",font=("Verdana",30))
 
         
                 
